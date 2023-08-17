@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans:wght@300;400&family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+body{
+    background-color: rgb(66, 66, 66);
+    flex-wrap: wrap;
+    height: 90vh;
+}
+
+.logo{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(156, 92, 92);
+    display: flex;
+}
+
+h2{
+    font-size: 120px;
+    text-decoration: none;
+}
+
+.left-page{
+    background-color: #482c2c;
+    height: 700px;
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 25px;
+
+}
+
+.car-btn{
+    width: 150px;
+    height: 50px;
+    top: 86%;
+    left: 14%;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.car-btn:active{
+    transform: scale(0.95);
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.cars{
+    height: 180px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.cars-img{
+    border-radius: 75% 30% 60% 40% / 60% 40% 60% 40%;
+}
+
+.cars-img img{
+    width: 150px;
+    opacity: 0.75;
+    transition: all 0.3s ease;
+}
+
+.cars:hover .cars-img img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.back-btn{
+    width: 150px;
+    height: 50px;
+    top: 90%;
+    left: 1%;
+    position: fixed;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.back-btn:active{
+    transform: scale(0.95);
+}
+
+/* Cars Image */
+
+.cars-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.models{
+    margin: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.017) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 10px;
+}
+
+
+.img-container img{
+    width: 300px;
+    height: 185px;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.img-container img:hover{
+    transform: scale(1.01);
+
+}
+
+.cars-name p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: underline rgb(55, 52, 52);
+    font-size: 18px;
+}
+
+.cars-year{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 3rem;
+    font-size: 0.85rem;
+    color: #fff;
+    float: right;
+    margin-top: -10px;
+}
+
+/* Popup Page */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+  
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #875151;
+}
+.popup .content {
+    max-height: 80%;
+    overflow: auto;
+}
+
+.img-popup img{
+    width: 30%;
+}
+
